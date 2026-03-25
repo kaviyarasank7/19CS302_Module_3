@@ -1,25 +1,48 @@
+
 # EX 15 C program that reads a one-dimensional array of integers and replaces all even elements with 'E'.
-## DATE:
 ## AIM:
 To write a C program that reads a one-dimensional array of integers and replaces all even elements with 'E'.
 
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
-
+1. Start. 
+2. Declare a array size value of type int. 
+3. Prompt the user to enter a value. 
+4. Read the value using scanf. 
+5. Initialize array elements. 
+6. Replace all even elements to E 
+7. End. 
 ## Program:
 ```
 /*
-Program that reads a one-dimensional array of integers and replaces all even elements with 'E'.
-Developed by: 
-RegisterNumber:  
+Developed by: Kaviyarasan S
+RegisterNumber:  212222060117
 */
+#include <stdio.h>
+
+int main()
+{
+    int n, i;
+    scanf("%d", &n);
+
+    int a[n];
+    for (i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    for (i = 0; i < n; i++)
+    {
+        if (a[i] % 2 == 0)
+            printf("E ");
+        else
+            printf("%d ", a[i]);
+    }
+
+    return 0;
+}
+ 
 ```
 
 ## Output:
+![image](https://github.com/user-attachments/assets/d9434684-1654-4723-a17b-cf3d030a32ea)
 
 
 
